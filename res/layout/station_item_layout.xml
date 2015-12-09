@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+			
+	<TextView
+	    android:id="@+id/stationName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/text_adapter_default_name_error"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_blue_dark"
+	    android:textSize="12sp" />
+
+	<TextView
+	    android:id="@+id/stationShortAddress"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	    
+	    android:layout_below="@+id/stationName"
+	    android:layout_alignLeft="@+id/stationName"
+	    android:text="@string/text_adapter_default_add_error"
+	    android:layout_marginTop="7dp"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/darker_gray"
+	    android:textSize="10sp" />
+
+	<ImageView
+	    android:id="@+id/imageViewStatus"
+	    android:layout_width="22dp"
+	    android:layout_height="22dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:tag="asd"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="15dp"
+	    android:layout_centerVertical="true"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/status_conv" />
+
+	<ImageView
+	    android:id="@+id/imageViewRightArrow"
+	    android:layout_width="10dp"
+	    android:layout_height="15dp"
+	    android:layout_centerVertical="true"
+	    android:layout_marginBottom="4dp"
+	    android:layout_alignBottom="@+id/imageViewStatus"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/arrow_right_grey" />
+
+	<TextView
+	    android:id="@+id/textViewPointNumber"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/imageViewStatus"
+	    android:layout_alignLeft="@+id/imageViewStatus"
+	    android:layout_marginLeft="7dp"
+	    android:layout_marginBottom="1dp"
+	    android:gravity="center"
+	    android:text="1"
+		
+	    android:textColor="@android:color/white" />
+
+	<TextView
+	    android:id="@+id/textViewSpec"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/imageViewStatus"
+	    android:layout_marginTop="7dp"
+	    android:text="@string/text_adapter_default_add_error"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@android:color/holo_orange_dark"
+	    android:textSize="10sp" />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="20dp"
+	    android:layout_height="20dp"
+	    android:layout_toRightOf="@+id/textViewSpec"
+	    android:layout_marginLeft="12dp"
+	    android:layout_marginTop="41dp"
+	    android:src="@drawable/battery_icon" />
+
+</RelativeLayout>
